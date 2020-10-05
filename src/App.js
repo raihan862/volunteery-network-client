@@ -20,7 +20,7 @@ function App() {
   const [user, setUser] = useState({ email: "", name: "" })
   const [service, setService] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/getServices")
+    fetch("https://radiant-cliffs-39414.herokuapp.com/getServices")
       .then(res => res.json())
       .then(data => setService(data))
 

@@ -13,7 +13,7 @@ const AdminHome = () => {
     const [activities, setActivities] = useState([]);
     const [view,setView] = useState(false);
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/getActivity`)
+    //     fetch(`https://radiant-cliffs-39414.herokuapp.com/getActivity`)
     //         .then(res => res.json())
     //         .then(data => setActivities(data))
 
@@ -23,7 +23,7 @@ const AdminHome = () => {
     const handleCancel = ( event,id) => {
        
         event.target.parentNode.parentNode.parentNode.style.display="none";
-        fetch(`http://localhost:5000/delete-activity/${id}`, {
+        fetch(`https://radiant-cliffs-39414.herokuapp.com/delete-activity/${id}`, {
             method: 'DELETE',
         })
          .then(res => {

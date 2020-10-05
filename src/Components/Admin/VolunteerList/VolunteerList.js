@@ -6,7 +6,7 @@ const VolunteerList = () => {
     const [activities, setActivities] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/getActivityAdmin`)
+        fetch(`https://radiant-cliffs-39414.herokuapp.com/getActivityAdmin`)
             .then(res => res.json())
             .then(data => setActivities(data))
 
@@ -15,7 +15,7 @@ const VolunteerList = () => {
     const handleCancel = ( event,id) => {
        
         event.target.parentNode.parentNode.parentNode.style.display="none";
-        fetch(`http://localhost:5000/delete-activity/${id}`, {
+        fetch(`https://radiant-cliffs-39414.herokuapp.com/delete-activity/${id}`, {
             method: 'DELETE',
         })
          .then(res => {

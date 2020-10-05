@@ -32,7 +32,7 @@ const Registration = () => {
    const onSubmit = values => {
       const d = date.toDateString()
       const registerData = { serviceId:id,...values, date:d,photo:selectedItem[0].photo}
-      fetch("http://localhost:5000/addVolunteer",{
+      fetch("https://radiant-cliffs-39414.herokuapp.com/addVolunteer",{
          method:"POST",
          headers: {
             'Content-Type': 'application/json'

@@ -21,7 +21,7 @@ const AddActivity = () => {
     const [service, setService] = useContext(serviceContext);
     const [message,setMgs] = useState(false);
     const onSubmit = values => {
-        fetch("http://localhost:5000/AddServices",{
+        fetch("https://radiant-cliffs-39414.herokuapp.com/AddServices",{
             method:"POST",
             headers: {
                'Content-Type': 'application/json'
