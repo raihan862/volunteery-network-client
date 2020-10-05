@@ -6,12 +6,13 @@ import NavBar from '../Header/NavBar';
 const UserActivity = () => {
     const [user, setUser] = useContext(loginContext)
     const [activities, setActivities] = useState([]);
+    const [flag, setFlag] = useState(0);
     useEffect(() => {
         fetch(`http://localhost:5000/getActivityUser?email=${user.email}`)
             .then(res => res.json())
             .then(data => setActivities(data))
 
-    },[])
+    },[flag])
 
     const handleCancel = ( event,id) => {
        
@@ -20,13 +21,13 @@ const UserActivity = () => {
             method: 'DELETE',
         })
          .then(res => {
-           
+           setFlag(flag+1)
          })
     }
     
     return (
         <Container>
-            <NavBar/>
+             
             <Row style={{marginTop:"30px"}}>
                 {
                     activities.map(activity =>

@@ -13,6 +13,7 @@ import UserActivity from './Components/UserActivity/UserActivity';
 import { Container } from 'react-bootstrap';
 import VolunteerList from './Components/Admin/VolunteerList/VolunteerList';
 import AdminHome from './Components/Admin/AminHome/AdminHome';
+import NavBar from './Components/Header/NavBar';
 export const serviceContext = createContext();
 export const loginContext = createContext();
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <BrowserRouter >
 
           <serviceContext.Provider value={[service, setService]}>
-
+          <NavBar />
             <Switch>
               <Route exact path='/'>
                 <Header></Header>
@@ -46,6 +47,7 @@ function App() {
 
               </PrivateRoute>
               <Route path="/login">
+              
                 <Login></Login>
               </Route>
               <Route path="/admin">

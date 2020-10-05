@@ -9,6 +9,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import './login.css'
 import logo from '../../logos/logo.png'
 import { loginContext } from '../../App';
+import NavBar from '../Header/NavBar';
 firebase.initializeApp(firebaseConfig);
 
 const Login = () => {
@@ -38,6 +39,7 @@ const Login = () => {
 
     return (
         <div id= "parent">
+            
             <img src={logo} alt="" width="150px" />
             <Form className="login-form" >
                 <h4 style={{ textAlign: "left", paddingBottom: "20px", fontWeight: "bold" }}>Login</h4>

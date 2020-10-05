@@ -32,7 +32,7 @@ const AdminHome = () => {
     }
     return (
        <Container fluid style={{backgroundColor:"white", position:"relative",height:"600px",width:"100%",padding:"15px"}}>
-         <NavBar></NavBar>
+         
          
            <Row style={{marginTop:"20px"}} >
                <Col sm={3} >

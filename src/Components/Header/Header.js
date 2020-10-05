@@ -11,7 +11,7 @@ const Header = () => {
         <div    >
             <img className="header" src={HeaderBackground} alt="" />
             <Container fluid={'xl'} style={{ marginTop: "15px" }}>
-                <NavBar></NavBar>
+                
                 <div className="searchBar">
                     <h1>I CROW BY HELPING PEOPLE IN NEED</h1>
                     <div className="box">
