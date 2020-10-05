@@ -49,7 +49,7 @@ const Login = () => {
                     Continue With Facebook
                   </Button>
                   <h6 style={{marginTop:"15px"}}>Dont have an account ?? 
-                <Link to="/user/sign-up">
+                <Link to="">
                         <span>  Create an account</span>
                 </Link>
                 </h6>
