@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    opacity: .1;
+    height: 600px;
+
+}  
+ 
+.searchBar{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    font-weight: 600;
+    color: black;
+}
+.box{
+    margin-top: 30px;
+    border: none;
+    width: 50%;
+    margin: auto;
+    padding: 0px;
+    display: block;
+    
+}
+
+.box input{
+    border-radius: 25px;
+}
+ 
+.navbar-nav a{
+    color: black;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar-nav a button{
+    
+    padding:5px 10px;
+    font-weight: 600;
+}

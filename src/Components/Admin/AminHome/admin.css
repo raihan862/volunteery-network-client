@@ -1,0 +1,36 @@
+.viewBtn{
+    border:none;
+    background-color:transparent;
+    padding:10px;
+    display:block
+}
+ .viewBtn:focus{
+    color:blue;
+    
+}
+
+#activityTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 20px;
+     
+  }
+  #activityTable td, #activityTable th {
+    border: none;
+    padding: 8px;
+  }
+  
+  #deleteIcon{
+      filter: brightness(1);
+      color: red;
+      background-color: red;
+  }
+  
+  #activityTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#eee;
+    color: black;
+  }

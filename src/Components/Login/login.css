@@ -1,0 +1,27 @@
+
+#parent{
+    
+     margin: auto;
+    width: 45%;
+    
+    text-align: center;
+    padding:30px 10px;
+}
+@media screen and (max-width: 680px) {
+    #parent {width: 100%; float: left;}
+}
+ 
+.login-form{
+   
+    box-shadow: 5px 5px 10px rgb(0,0,0,.1),
+                    -5px -5px 10px rgb(0,0,0,.05);
+    padding: 30px 10px;
+    height: 350px;
+    margin-top: 10%;
+}
+#sigining-btn{
+    border: 1px solid #777;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
